@@ -50,7 +50,7 @@ public class StringUtils
 	
 	public static String hash(String value, int length) throws NoSuchAlgorithmException, DigestException
 	{
-		return String.valueOf(MessageDigest.getInstance(HASH_ALGORITHM).digest(value.getBytes(), 0, length));
+		return String.valueOf(MessageDigest.getInstance(HASH_ALGORITHM).digest(value.getBytes()));
 	}
 
 	public static String regexReplaceAll(String haystack, String needleRegex,
